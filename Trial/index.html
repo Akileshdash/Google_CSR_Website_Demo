@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .container1,
+        .holder {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #box1,
+        #box2 {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .holder {
+            background-color: #f0f0f0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Optional: Add styles for the ticker animation */
+        #ticker01 {
+            overflow: hidden;
+            height: 200px;
+        }
+
+        #ticker01 li {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div id="box1">Google Research<br></div>
+        <div id="box2">Text Here<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod metus sem, eget dictum odio pulvinar at. 
+            Donec ornare nisl ex, sed dictum turpis commodo sit amet. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+            Praesent enim nulla, tempus at erat nec, mattis faucibus mi. 
+            Sed a pulvinar quam, aliquam eleifend augue. 
+            In eget justo et sem venenatis luctus ac vitae erat. 
+            Suspendisse bibendum vitae mauris id molestie. 
+            Maecenas lobortis commodo magna et imperdiet. 
+            Aliquam ut sollicitudin nisi. Nam eget vestibulum quam. 
+            Quisque tempor velit risus, eu consectetur erat scelerisque ut. 
+            Donec vulputate tellus quis magna .
+        </div>
+    </div>
+    
+    <div class="holder">
+        <ul id="ticker01">
+            <li><span>10/10/2007</span><a href="#">The first thing that most Javascript programmers</a></li>
+            <!-- Add more list items as needed -->
+        </ul>
+    </div>
+</body>
+</html>

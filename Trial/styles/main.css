@@ -13,18 +13,19 @@ section {
   background-color: #22A7F0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 section:nth-child(1) {
   background: white;
 }
 section:nth-child(2) {
-  background: #34A853;
+  background: #F64747;
 }
 section:nth-child(3) {
   background: #22A7F0;
 }
 section:nth-child(4) {
-  background: white;
+  background: #F9690E;
 }
 section:nth-child(5) {
   background: #9B59B6;

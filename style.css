@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 body{
 	font-family: 'Roboto', sans-serif;
@@ -11,119 +12,147 @@ body{
 i {
 	margin-right: 10px;
 }
-.image-container {
-	max-width: 600px; /* Set your desired maximum width */
-	margin-left: 0.5cm;
-  }
 
-  /* Make the image responsive within the container */
-  .image-container img {
-	width: 20%;
-	height: auto;
-	display: block; /* Remove extra space below the image */
-  }
-/*----------bootstrap-navbar-css------------*/
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute items to the start and end of the container */
+    padding: 0.5cm; /* Add padding for better spacing */
+    align-items: flex-start; /* Align items to the start (top) of the container */
+}
+.image-container{
+    flex : 1;
+    max-width: 100px;
+}
+.image-container1 {
+  flex: 1; /* Equal width for both containers */
+  max-width: 1000px;
+  margin-top: -2.6cm;
+  margin-right: -15cm;
+  overflow: hidden;
+}
+.image-container2 {
+  flex: 1; /* Equal width for both containers */
+  max-width: 1px;
+  margin-top: 0%;
+  margin-right: 60%;
+}
 
-.navbar{
-	z-index: 1;
+.image-container1 img,
+.image-container img {
+  max-width: 100%; /* Make sure images don't exceed their container width */
+  height: auto;
+  display: block;
 }
-.navbar-logo{
-	padding: 15px;
-	color: #fff;
+  #navbar {
+      position: sticky;
+      margin-top: -3cm;
+      top: 0;
+      z-index: 100;
+      flex: 2; /* Take up 2/3 of available space */
+  }
+  
+.navbar-mainbg {
+    background-color: #4285F4;
+    padding: 0px; /* Add padding to the navbar */
 }
-.navbar-mainbg{
-	background-color: #34A853;/*#34A853*/
-	padding: 0px;
-	
+
+#navbarSupportedContent {
+    overflow: hidden;
+    position: relative;
+    margin-left: 25%;
 }
-#navbarSupportedContent{
-	overflow: hidden;
-	position: relative;
+
+#navbarSupportedContent ul {
+    padding: 0;
+    margin: 0;
 }
-#navbarSupportedContent ul{
-	padding: 0px;
-	margin: 0px;
+
+#navbarSupportedContent ul li {
+    list-style-type: none;
+    display: inline-block;
 }
-#navbarSupportedContent ul li a i{
-	margin-right: 10px;
-}
-#navbarSupportedContent li {
-	list-style-type: none;
-	float: left;
-}
-#navbarSupportedContent ul li a{
-	color:white;
+
+#navbarSupportedContent ul li a {
+    color: white;
     text-decoration: none;
     font-size: 15px;
     display: block;
     padding: 20px 20px;
-    transition-duration:0.6s;
-	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     position: relative;
 }
-#navbarSupportedContent>ul>li.active>a{
-	color: #34A853;
-	background-color: transparent;
-	transition: all 0.7s;
+
+#navbarSupportedContent>ul>li.active>a {
+    color: #4285F4;
+    background-color: transparent;
+    transition: all 0.7s;
 }
+
 #navbarSupportedContent a:not(:only-child):after {
-	content: "\f105";
-	position: absolute;
-	right: 20px;
-	top: 10px;
-	font-size: 14px;
-	font-family: "Font Awesome 5 Free";
-	display: inline-block;
-	padding-right: 3px;
-	vertical-align: middle;
-	font-weight: 900;
-	transition: 0.5s;
+    content: "\f105";
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    transition: 0.5s;
 }
+
 #navbarSupportedContent .active>a:not(:only-child):after {
-	transform: rotate(90deg);
+    transform: rotate(90deg);
 }
-.hori-selector{
-	display:inline-block;
-	position:absolute;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	transition-duration:0.6s;
-	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	background-color: #fff;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	margin-top: 10px;
+
+.hori-selector {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
 }
+
 .hori-selector .right,
-.hori-selector .left{
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	background-color: #fff;
-	bottom: 10px;
+.hori-selector .left {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    bottom: 10px;
 }
-.hori-selector .right{
-	right: -25px;
+
+.hori-selector .right {
+    right: -25px;
 }
-.hori-selector .left{
-	left: -25px;
+
+.hori-selector .left {
+    left: -25px;
 }
+
 .hori-selector .right:before,
-.hori-selector .left:before{
-	content: '';
+.hori-selector .left:before {
+    content: '';
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #34A853;
+    background-color: #4285F4;
 }
-.hori-selector .right:before{
-	bottom: 0;
+
+.hori-selector .right:before {
+    bottom: 0;
     right: -25px;
 }
-.hori-selector .left:before{
-	bottom: 0;
+
+.hori-selector .left:before {
+    bottom: 0;
     left: -25px;
 }
 
@@ -183,3 +212,88 @@ i {
 	}
 }
 
+/*Google Box*/
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#box1{
+    width: 600px;
+    background-color: #adefd1ff;
+    text-align: justify;
+    font-family: cursive, sans-serif;
+    font-size: 1.5rem;
+    margin-right: 20cm;
+    margin-top: 1cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #00203FFF;
+  }
+  #box2 {
+    width: 600px;
+    background-color: #adefd1ff;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-right: 20cm;
+    margin-bottom: 1cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #00203FFF;
+  }
+  
+  .Heading {
+    font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
+    font-size: 2.3rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    color: white; /* Adjust the text color as needed */
+    text-align: center; /* Adjust the text alignment as needed */
+    padding: 60px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Adjust the border radius as needed */
+  }
+  .Ps {
+    font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
+    font-size: 2.3rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    color: Black; /* Adjust the text color as needed */
+    text-align: center; /* Adjust the text alignment as needed */
+    padding: 60px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Adjust the border radius as needed */
+  }
+
+  /*Ticker*/
+  .holder { 
+    background-color:#ccc;
+    width:400px;
+    height:250px;
+    overflow:hidden;
+    padding:10px;
+    font-family:Helvetica;
+  }
+  .holder .mask {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    width:300px;
+    height:240px;
+    overflow: hidden;
+  }
+  .holder ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    position: relative;
+  }
+  .holder ul li {
+    padding:10px 0px;
+  }
+  .holder ul li a {
+    color:darkred;
+    text-decoration:none;
+  }
+  
