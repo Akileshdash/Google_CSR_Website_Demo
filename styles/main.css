@@ -21,12 +21,14 @@ section:nth-child(3) {
 section:nth-child(4) {
   background: white;
 }
+/*
 section:nth-child(5) {
-  background: #9B59B6;
+  background: #908a92;
 }
 section:nth-child(6) {
   background: #03C9A9;
 }
+*/
 section:nth-child(7) {
   background: #ffcc00;
 }
