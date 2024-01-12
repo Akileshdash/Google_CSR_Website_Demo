@@ -15,7 +15,7 @@ section {
   display: flex;
   justify-content: center;
 
-  $colors: white, #34A853, #22A7F0, white, #9B59B6, #03C9A9, #ffcc00;
+  $colors: white, rgb(242,242,242), #22A7F0, white, #9B59B6, #03C9A9, #ffcc00;
   @for $i from 1 through length($colors) {
     &:nth-child(#{$i}) {
       background: nth($colors, $i)

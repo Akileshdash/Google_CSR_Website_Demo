@@ -292,6 +292,15 @@ i {
     padding: 60px; /* Adjust the padding as needed */
     border-radius: 5px; /* Adjust the border radius as needed */
   }
+  .AboutUsHeading {
+    font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
+    font-size: 2.3rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    color: rgb(0, 0, 0); /* Adjust the text color as needed */
+    padding:10px;
+    border-radius: 5px; /* Adjust the border radius as needed */
+  }
+
   .Ps {
     font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
     font-size: 2.3rem; /* Adjust the font size as needed */
@@ -323,6 +332,7 @@ i {
     overflow: hidden;
     margin-top: 30px;
   }
+  
   .holder ul {
     list-style:none;
     margin:0;
@@ -358,4 +368,73 @@ i {
     color: black;
     font-weight: bold;
     font-size: 30px;
+  }
+
+  .section1 {
+    background-image: url('pics/Banner1.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    /* You can add more background properties and styles as needed */
+    height: 700px; /* Set a height for the section to see the background */
+  }
+  .section2 {
+    background-image: url('pics/Banner2.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    /* You can add more background properties and styles as needed */
+    height: 700px; /* Set a height for the section to see the background */
+    position: relative;
+  }
+
+.section2 img {
+  width: auto; /* Make the image fill the entire width of the section */
+  height: 300px; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove extra spacing below the image */
+  margin-left: 5%;
+  margin-top: 10%;
+  border-radius: 20px;
+
+}
+#box3{
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+    font-family: 'Kay Pho Du', serif;
+    font-size: 1.5rem;
+    margin-left: 7%;
+    margin-top: 3cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: black;
+    border: 2px solid ;
+    /*border-image: linear-gradient(to right, #4285F4, #34A853, #FBBC05, #EA4335); /* Define the linear gradient colors */
+    /*border-image-slice: 1; /* Ensure the entire border is filled with the gradient */
+   
+  }#box4 {
+    width: 550px;
+    background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin-left: 7%;
+    margin-bottom: 1cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif;
+  
+    /* Apply the backdrop-filter property for blurring */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  }
+  
+  .section3 {
+    /*background-image: url('pics/Banner3.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    /* You can add more background properties and styles as needed */
+    height: 700px; /* Set a height for the section to see the background */
+    position: relative;
+    color:rgb(0, 0, 0);
   }
