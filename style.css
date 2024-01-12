@@ -614,3 +614,73 @@ button[aria-expanded='true'] + .accordion-content {
   background-color: #000000;
   color:rgb(0, 0, 0);
 }
+
+@media screen and (max-width : 600px) {
+  
+  .container{
+    display: flex;
+    flex-direction:column;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .section1
+  {
+    height: 1000px;
+  }
+  .image-container{
+    align-items: center;
+  }
+  .top{
+    height: 1000 px;
+  }
+  .top{
+    display: inline-flex;
+    flex-direction:column;
+  }
+  #box2{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  #box4{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  #box3{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  #box1{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .section2{
+    display: inline-flex;
+    flex-direction:column;
+    height: 1000px;
+  }
+  .image-container2>img{
+   width: 400px;
+  }
+  .image-container1>img{
+    width: 400px;
+  }
+  #header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .gradient-text {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #4285F4, #EA4335); /* Define the linear gradient colors */
+    display: inline-block; /* Ensures that the gradient applies only to the text */
+  }
+  
+}
