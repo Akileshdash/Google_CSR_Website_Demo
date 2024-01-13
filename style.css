@@ -240,9 +240,6 @@ i {
     flex-direction: column;
     align-items: center;
     margin-left: 50px;
-    margin-right: 0px;
-    padding-right: 0px;
-    border-right: 0px;
   }
   .gradient-text {
     background-clip: text;
@@ -258,11 +255,11 @@ i {
   }
 #box1{
     width: 600px;
-    background-color: rgb(255, 255, 255);
-    text-align: justify;
+    background-color: rgba(255, 255, 255);
+    text-align: center;
     font-family: 'Kay Pho Du', serif;
     font-size: 1.5rem;
-    margin-right: 2cm;
+    margin-right: 7cm;
     margin-top: 1cm;
     padding: 20px;
     border-radius: 10px;
@@ -275,18 +272,20 @@ i {
   }
   #box2 {
     width: 600px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
     text-align: justify;
     font-family: sans-serif;
     font-size: 1.3rem;
-    font-weight: bolder;
-    margin-right: 2cm;
+    margin-right: 7cm;
     margin-bottom: 1cm;
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
     color: rgb(0, 0, 0);
     font-family: 'Prompt', sans-serif;
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    
+    font-weight: bold;
   }
   
   .Heading {
@@ -308,25 +307,16 @@ i {
     margin-top: 4%;
     border-radius: 5px; /* Adjust the border radius as needed */
   }
-  .Ps {
-    font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
-    font-size: 2.3rem; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
-    color: Black; /* Adjust the text color as needed */
-    text-align: center; /* Adjust the text alignment as needed */
-    padding: 60px; /* Adjust the padding as needed */
-    border-radius: 5px; /* Adjust the border radius as needed */
-  }
 
   /*Ticker*/
   .holder { 
     background-color:rgb(237,237,237);
-    width:780px;
-    height:500px;
+    width:500px;
+    height:300px;
     overflow:hidden;
-    padding:0px;
+    padding:1px;
+    margin-left: -50px;
     font-family:Helvetica;
-    font-size: 20px;
     display: flex;
     margin-top: 50px;
     border-radius: 20px;
@@ -335,8 +325,8 @@ i {
     position: relative;
     left: 0px;
     top: 10px;
-    width: 590px;
-    height:480px;
+    width:300px;
+    height:240px;
     overflow: hidden;
     margin-top: 30px;
   }
@@ -375,7 +365,7 @@ i {
     font-family: 'Dancing Script', cursive;
     color: black;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 30px;
   }
 
   .section1 {
@@ -425,7 +415,6 @@ i {
     text-align: justify;
     font-family: sans-serif;
     font-size: 1.3rem;
-    font-weight: bolder;
     margin-left: 7%;
     margin-bottom: 1cm;
     padding: 20px;
@@ -433,9 +422,7 @@ i {
     overflow: hidden;
     color: rgb(0, 0, 0);
     font-family: 'Prompt', sans-serif;
-  
-    /* Apply the backdrop-filter property for blurring */
-    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
   }
   
   .section3 {
@@ -484,7 +471,7 @@ i {
   border-bottom: 1px solid var(--lightgray);
 
   backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
-  background-color: rgba(255, 255, 255, 1); /* Use a semi-transparent background color */
+  background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
   border-radius: 10px;
   overflow: hidden;
   font-family: 'Prompt', sans-serif;
@@ -568,7 +555,6 @@ button[aria-expanded='true'] {
 button[aria-expanded='true'] .icon::after {
   width: 0;
 }
-
 .accordion-content {
   opacity: 0;
   max-height: 0;
@@ -576,6 +562,7 @@ button[aria-expanded='true'] .icon::after {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }
+
 
 button[aria-expanded='true'] + .accordion-content {
   opacity: 1;
@@ -585,9 +572,8 @@ button[aria-expanded='true'] + .accordion-content {
 }
 
 .accordion-content p {
-  font-size: 1rem;
-  font-weight: 300;
-  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: bold;
   margin: 2em 0;
 }
 
@@ -598,8 +584,7 @@ button[aria-expanded='true'] + .accordion-content {
   color: white;
   border-radius: 5px;
   margin-top: 1%;
-  margin-left: 45;
-  height: 30px;
+  margin-left: 45%;
 }
 
 .section5 {
@@ -623,142 +608,55 @@ button[aria-expanded='true'] + .accordion-content {
   color:rgb(0, 0, 0);
 }
 
-.contactDetails{
-  font-family: 'Prompt', sans-serif;
-  font-size: 20px;
-  position: relative;
-  right: -10px;
-  top: 50px;
+
+.section4 {
+  background-image: url('pics/Banner4.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Center the background image */
+  /* You can add more background properties and styles as needed */
+  height: 700px; /* Set a height for the section to see the background */
 }
 
-
-
-@media screen and (max-width : 600px) {
-  
-  .container{
-    display: flex;
-    flex-direction:column;
-  }
-  .wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .section1
-  {
-    height: 1000px;
-  }
-  .image-container{
-    align-items: center;
-  }
-  .top{
-    height: 1000 px;
-  }
-  .top{
-    display: inline-flex;
-    flex-direction:column;
-  }
-  #box2{
-    width: 100%;
-    font-weight: bolder;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
-  #box4{
-    width: 100%;
-    font-weight: bolder;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
-  #box3{
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
-  #box1{
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
-  .section2{
-    display: inline-flex;
-    flex-direction:column;
-    height: 1000px;
-  }
-  .image-container2>img{
-   width: 400px;
-  }
-  .image-container1>img{
-    width: 400px;
-  }
-  #header{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .gradient-text {
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(to right, #4285F4, #EA4335); /* Define the linear gradient colors */
-    display: inline-block; /* Ensures that the gradient applies only to the text */
-  }
-   /*Ticker*/
-   .holder { 
-    background-color:rgb(237,237,237);
-    width:400px;
-    height:250px;
-    overflow:hidden;
-    padding:10px;
-    font-family:Helvetica;
-    display: flex;
-    margin-top: 50px;
-    border-radius: 20px;
-  }
-  .holder .mask {
-    position: relative;
-    left: 0px;
-    top: 10px;
-    width:300px;
-    height:240px;
-    overflow: hidden;
-    margin-top: 30px;
-  }
-  
-  .holder ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-    position: relative;
-  }
-  .holder ul li {
-    padding:10px 0px;
-  }
-  .holder ul li a {
-    color:black;
-    text-decoration:none;
-  }
-
-  /* .top {
-    display: flex;
-  } */
-
-  .container, .holder {
-    padding: 10px; /* Add padding as needed */
-  }
-
-  .container {
-    margin-right: 2px; /* Adjust the margin as needed */
-  }
-  #ticker01 li span {
-    font-weight: bold;
-    color: black;
-  }
-
-  .CurrentEvents{
-    font-family: 'Dancing Script', cursive;
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  
+.ProgramSchedule {
+  font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */ /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  color: Black; /* Adjust the text color as needed */
+  text-align: center; /* Adjust the text alignment as needed */
+  padding: 60px; /* Adjust the padding as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
 }
+#box5 {
+  width: 300px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: 7%;
+  margin-bottom: 1cm;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+}
+.content__container__list__item a {
+  color: white;
+  text-decoration: none; /* Remove the underline */
+}
+
+.icon2{
+  overflow:auto;
+  margin-left: 30px;
+  filter: invert(100%);
+}
+.icon {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
