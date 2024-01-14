@@ -25,22 +25,22 @@ i {
     padding: 0.5cm; /* Add padding for better spacing */
     align-items: flex-start; /* Align items to the start (top) of the container */
 }
-.image-container{
+.image-container{/*symbol*/
     flex : 1;
-    max-width: 100px;
+    max-width: 1000px;
 }
-.image-container1 {
+.image-container1 {/* gr*/
   flex: 1; /* Equal width for both containers */
   max-width: 1000px;
-  margin-top: -2.6cm;
-  margin-right: -15cm;
+  margin-top: 0;
+  margin-right:0;
   overflow: hidden;
 }
 .image-container2 {
   flex: 1; /* Equal width for both containers */
-  max-width: 1px;
+  max-width: 1000px;
   margin-top: 0%;
-  margin-right: 60%;
+  margin-right: 0;
 }
 
 .image-container1 img,
@@ -50,12 +50,12 @@ i {
   display: block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {/* need for tabs*/
   .image-container2 {
       display: none;
   }
 
-  .image-container1
+  /* .image-container1,
   .image-container {
       flex: 1;
       max-width: calc(50% - 0.5em); 
@@ -67,7 +67,7 @@ i {
     max-width: 60px;
     margin-top: 100px;
     margin-left: calc(11% + 16%); 
-  }
+  } */
 }
   #navbar {
       position: sticky;
@@ -255,10 +255,11 @@ i {
 /*Google Box*/
 
 .container1 {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 0px;
   }
   .gradient-text {
     background-clip: text;
@@ -273,12 +274,12 @@ i {
     margin: 20px 0; /* Adjust the margin as needed */
   }
 #box1{
-    width: 600px;
+    width: 100%;
     background-color: rgba(255, 255, 255);
     text-align: center;
     font-family: 'Kay Pho Du', serif;
     font-size: 1.5rem;
-    margin-right: 7cm;
+    margin-right: 0px;
     margin-top: 1cm;
     padding: 20px;
     border-radius: 10px;
@@ -290,12 +291,12 @@ i {
    
   }
   #box2 {
-    width: 600px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
     text-align: justify;
     font-family: sans-serif;
     font-size: 1.3rem;
-    margin-right: 7cm;
+    margin-right: 0px;
     margin-bottom: 1cm;
     padding: 20px;
     border-radius: 10px;
@@ -307,7 +308,7 @@ i {
     font-weight: bold;
   }
   
-  .Heading {
+  .Heading {/* not needed this block remove it as it is not used */
     font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
     font-size: 2.3rem; /* Adjust the font size as needed */
     font-weight: bold; /* Adjust the font weight as needed */
@@ -329,12 +330,13 @@ i {
 
   /*Ticker*/
   .holder { 
+    flex: 1;
     background-color:rgb(237,237,237);
-    width:500px;
+    width:100%;
     height:300px;
     overflow:hidden;
     padding:1px;
-    margin-left: -50px;
+    margin-left: 0px;
     font-family:Helvetica;
     display: flex;
     margin-top: 50px;
@@ -366,6 +368,7 @@ i {
 
   .top {
     display: flex;
+    width: 100%;
   }
 
   .container, .holder {
@@ -373,7 +376,7 @@ i {
   }
 
   .container {
-    margin-right: 2px; /* Adjust the margin as needed */
+    margin-right: 0%; /* Adjust the margin as needed */
   }
   #ticker01 li span {
     font-weight: bold;
@@ -392,34 +395,41 @@ i {
     background-size: cover; /* Adjust the background size as needed */
     background-position: center; /* Center the background image */
     /* You can add more background properties and styles as needed */
-    height: 700px; /* Set a height for the section to see the background */
+    height: auto; /* Set a height for the section to see the background */
   }
   .section2 {
     background-image: url('pics/Banner2.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
     background-size: cover; /* Adjust the background size as needed */
     background-position: center; /* Center the background image */
     /* You can add more background properties and styles as needed */
-    height: 700px; /* Set a height for the section to see the background */
+    height: auto; /* Set a height for the section to see the background */
     position: relative;
+    display: flex;
+  }
+  .aboutUs{
+    flex:1;
+  }
+  .container3{
+    flex: 1;
   }
 
 .section2 img {
-  width: auto; /* Make the image fill the entire width of the section */
+  width: 100%; /* Make the image fill the entire width of the section */
   height: 300px; /* Maintain the aspect ratio of the image */
   display: block; /* Remove extra spacing below the image */
-  margin-left: 5%;
+  margin-left: 0%;
   margin-top: 10%;
   border-radius: 20px;
 
 }
 #box3{
-    width: 550px;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     text-align: justify;
     font-family: 'Kay Pho Du', serif;
     font-size: 1.5rem;
-    margin-left: 7%;
-    margin-top: 3cm;
+    margin-left: 0%;
+    margin-top: 0px;
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -429,12 +439,12 @@ i {
     /*border-image-slice: 1; /* Ensure the entire border is filled with the gradient */
    
   }#box4 {
-    width: 550px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
     text-align: justify;
     font-family: sans-serif;
     font-size: 1.3rem;
-    margin-left: 7%;
+    margin-left: 0%;
     margin-bottom: 1cm;
     padding: 20px;
     border-radius: 10px;
@@ -449,7 +459,7 @@ i {
     background-size: cover; /* Adjust the background size as needed */
     background-position: center; /* Center the background image */
     /* You can add more background properties and styles as needed */
-    height: 700px; /* Set a height for the section to see the background */
+    height: auto; /* Set a height for the section to see the background */
     position: relative;
     color:rgb(0, 0, 0);
   }
@@ -585,9 +595,10 @@ button[aria-expanded='true'] .icon::after {
 
 button[aria-expanded='true'] + .accordion-content {
   opacity: 1;
-  max-height: 9em;
+  max-height: 1000px; 
+  height: auto;
   transition: all 200ms linear;
-  will-change: opacity, max-height;
+  will-change: opacity, height;
 }
 
 .accordion-content p {
@@ -611,7 +622,8 @@ button[aria-expanded='true'] + .accordion-content {
   background-size: cover; /* Adjust the background size as needed */
   background-position: center; /* Center the background image */
   /* You can add more background properties and styles as needed */
-  height: 300px; /* Set a height for the section to see the background */
+  min-height: 700px;
+  height: auto; /* Set a height for the section to see the background */
   position: relative;
   background-color: #3c3c3c;
   color:rgb(0, 0, 0);
@@ -621,7 +633,7 @@ button[aria-expanded='true'] + .accordion-content {
   background-size: cover; /* Adjust the background size as needed */
   background-position: center; /* Center the background image */
   /* You can add more background properties and styles as needed */
-  height: 50px; /* Set a height for the section to see the background */
+  height: auto; /* Set a height for the section to see the background */
   position: relative;
   background-color: #000000;
   color:rgb(0, 0, 0);
@@ -633,7 +645,8 @@ button[aria-expanded='true'] + .accordion-content {
   background-size: cover; /* Adjust the background size as needed */
   background-position: center; /* Center the background image */
   /* You can add more background properties and styles as needed */
-  height: 700px; /* Set a height for the section to see the background */
+  min-height: 700px;
+  height: auto; /* Set a height for the section to see the background */
 }
 
 .ProgramSchedule {
@@ -679,3 +692,185 @@ button[aria-expanded='true'] + .accordion-content {
   border-radius: 22px;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .section1 {
+    height: auto;
+  }
+
+  .image-container {
+    align-items: center;
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .image-container1 {
+    margin-top: -85px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+
+  .image-container2 {
+    align-items: center;
+    width: 100%;
+  }
+
+  .top {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #box2,
+  #box4,
+  #box3,
+  #box1 {
+    width: 90%;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .section2 {
+    display: inline-flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image-container2>img {
+    display: none;
+  }
+
+  .image-container1>img,
+  .image-container>img {
+    width: 90%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5%;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #box4{
+    background-color: transparent;
+    background-image: none; /* Make sure there is no background image */
+    /* background-blur: none;   If there is any blur effect applied */
+    filter: none;  
+  }
+  .container1 {
+    margin-left: 0px;
+  }
+
+  .holder {
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 0px;
+    font-family: Helvetica;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-left: 0px;
+  }
+
+  .holder .mask {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    width: 300px;
+    height: 240px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  .holder ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .holder ul li {
+    padding: 10px 0px;
+  }
+
+  .holder ul li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .container {
+    padding: 10px;
+    margin-right: 2px;
+  }
+
+  #ticker01 li span {
+    font-weight: bold;
+    color: black;
+  }
+
+  .CurrentEvents {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .section4 {
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 900px;
+    height: auto;
+  }
+
+  .section5 {
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 900px;
+    height: auto;
+  }
+
+  .section6 {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .ProgramSchedule {
+    align-items: center;
+    padding: 0px;
+  }
+
+  .ContactHeading {
+    margin-left: 0px;
+  }
+  .container3{
+    padding-left: 5%;
+  }
+  .section3{
+    height: auto;
+  }
+  .section2 img{
+    margin: 0px;
+    width: 92%;
+    padding: 4%;
+  }
+}
