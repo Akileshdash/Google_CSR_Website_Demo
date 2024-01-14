@@ -1,163 +1,662 @@
-.site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
 }
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
+* {
+	margin: 0;
+	padding: 0;
+	
 }
-.site-footer hr.small
-{
-  margin:20px 0
+i {
+	margin-right: 10px;
 }
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute items to the start and end of the container */
+    padding: 0.5cm; /* Add padding for better spacing */
+    align-items: flex-start; /* Align items to the start (top) of the container */
 }
-.site-footer a
-{
-  color:#737373;
+.image-container{
+    flex : 1;
+    max-width: 100px;
 }
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+.image-container1 {
+  flex: 1; /* Equal width for both containers */
+  max-width: 1000px;
+  margin-top: -2.6cm;
+  margin-right: -15cm;
+  overflow: hidden;
 }
-.footer-links
-{
-  padding-left:0;
-  list-style:none
+.image-container2 {
+  flex: 1; /* Equal width for both containers */
+  max-width: 1px;
+  margin-top: 0%;
+  margin-right: 60%;
 }
-.footer-links li
-{
-  display:block
+
+.image-container1 img,
+.image-container img {
+  max-width: 100%; /* Make sure images don't exceed their container width */
+  height: auto;
+  display: block;
 }
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
+  #navbar {
+      position: sticky;
+      margin-top: -2.5cm;
+      top: 0;
+      z-index: 100;
+      flex: 2; /* Take up 2/3 of available space */
+      
+    font-family: 'Noto Serif', serif;
   }
+  
+.icon1{
+  overflow:auto;
+  margin-bottom:-6px;
+  filter: invert(100%);
 }
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
+
+.navbar-mainbg {
+    background-color: #4285F4;
+      border-radius: 20px;
+      width: 90%;
+      margin-left: 4.5%;
+      padding: 0px; /* Add padding to the navbar */
+}
+
+#navbarSupportedContent {
+    overflow: hidden;
+    position: relative;
+    margin-left: 20%;
+}
+
+#navbarSupportedContent ul {
+    padding: 0;
+    margin: 0;
+}
+
+#navbarSupportedContent ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#navbarSupportedContent ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent ul li.active i {
+  filter: invert(50%);
+}
+
+#navbarSupportedContent>ul>li.active>a {
+    color: #4285F4;
+    background-color: transparent;
+    transition: all 0.7s;
+
+}
+
+#navbarSupportedContent a:not(:only-child):after {
+    content: "\f105";
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+#navbarSupportedContent .active>a:not(:only-child):after {
+    transform: rotate(90deg);
+}
+
+.hori-selector {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
+}
+
+.hori-selector .right,
+.hori-selector .left {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    bottom: 10px;
+}
+
+.hori-selector .right {
+    right: -25px;
+}
+
+.hori-selector .left {
+    left: -25px;
+}
+
+.hori-selector .right:before,
+.hori-selector .left:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4285F4;
+}
+
+.hori-selector .right:before {
+    bottom: 0;
+    right: -25px;
+}
+
+.hori-selector .left:before {
+    bottom: 0;
+    left: -25px;
+}
+
+
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+
+
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}
+
+/*Google Box*/
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
+  .gradient-text {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #4285F4, #EA4335); /* Define the linear gradient colors */
+    display: inline-block; /* Ensures that the gradient applies only to the text */
   }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
+
+  hr {
+    border: none; /* Remove the default border */
+    border-top: 4px solid red; /* Set the desired border color and width */
+    margin: 20px 0; /* Adjust the margin as needed */
   }
+#box1{
+    width: 600px;
+    background-color: rgba(255, 255, 255);
+    text-align: center;
+    font-family: 'Kay Pho Du', serif;
+    font-size: 1.5rem;
+    margin-right: 7cm;
+    margin-top: 1cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: black;
+    border: 2px solid ;
+    /*border-image: linear-gradient(to right, #4285F4, #34A853, #FBBC05, #EA4335); /* Define the linear gradient colors */
+    /*border-image-slice: 1; /* Ensure the entire border is filled with the gradient */
+   
+  }
+  #box2 {
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin-right: 7cm;
+    margin-bottom: 1cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif;
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    
+    font-weight: bold;
+  }
+  
+  .Heading {
+    font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
+    font-size: 2.3rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    color: white; /* Adjust the text color as needed */
+    text-align: center; /* Adjust the text alignment as needed */
+    padding: 60px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Adjust the border radius as needed */
+    
+  }
+  .AboutUsHeading {
+    font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
+    font-size: 2.3rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    color: rgb(0, 0, 0); /* Adjust the text color as needed */
+    padding:10px;
+    margin-top: 4%;
+    border-radius: 5px; /* Adjust the border radius as needed */
+  }
+
+  /*Ticker*/
+  .holder { 
+    background-color:rgb(237,237,237);
+    width:500px;
+    height:300px;
+    overflow:hidden;
+    padding:1px;
+    margin-left: -50px;
+    font-family:Helvetica;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
+  .holder .mask {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    width:300px;
+    height:240px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  .holder ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    position: relative;
+  }
+  .holder ul li {
+    padding:10px 0px;
+  }
+  .holder ul li a {
+    color:black;
+    text-decoration:none;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  .container, .holder {
+    padding: 10px; /* Add padding as needed */
+  }
+
+  .container {
+    margin-right: 2px; /* Adjust the margin as needed */
+  }
+  #ticker01 li span {
+    font-weight: bold;
+    color: black;
+  }
+
+  .CurrentEvents{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .section1 {
+    background-image: url('pics/Banner1.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    /* You can add more background properties and styles as needed */
+    height: 700px; /* Set a height for the section to see the background */
+  }
+  .section2 {
+    background-image: url('pics/Banner2.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    /* You can add more background properties and styles as needed */
+    height: 700px; /* Set a height for the section to see the background */
+    position: relative;
+  }
+
+.section2 img {
+  width: auto; /* Make the image fill the entire width of the section */
+  height: 300px; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove extra spacing below the image */
+  margin-left: 5%;
+  margin-top: 10%;
+  border-radius: 20px;
+
 }
+#box3{
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+    font-family: 'Kay Pho Du', serif;
+    font-size: 1.5rem;
+    margin-left: 7%;
+    margin-top: 3cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: black;
+    border: 2px solid ;
+    /*border-image: linear-gradient(to right, #4285F4, #34A853, #FBBC05, #EA4335); /* Define the linear gradient colors */
+    /*border-image-slice: 1; /* Ensure the entire border is filled with the gradient */
+   
+  }#box4 {
+    width: 550px;
+    background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin-left: 7%;
+    margin-bottom: 1cm;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif;
+    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+  }
+  
+  .section3 {
+    background-image: url('pics/Banner3.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    /* You can add more background properties and styles as needed */
+    height: 700px; /* Set a height for the section to see the background */
+    position: relative;
+    color:rgb(0, 0, 0);
+  }
+  
+  .EventsHeading {
+    font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */
+    font-size: 2.3rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    color: rgb(0, 0, 0); /* Adjust the text color as needed */
+    padding:10px;
+    margin-top: 4%;
+    border-radius: 5px; /* Adjust the border radius as needed */
+    text-align: center;
+  }
+
+
+/* Variables */
+:root {
+  --bg: #fff;
+  --text: #7288a2;
+  --gray: #4d5974;
+  --lightgray: #e5e5e5;
+  --blue: #03b5d2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container2 {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 75rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--lightgray);
+
+  backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Prompt', sans-serif;
+
+  /* Apply the backdrop-filter property for blurring */
+  backdrop-filter: blur(10px); 
+}
+
+button[aria-expanded='true'] {
+  border-bottom: 1px solid var(--blue);
+}
+
+button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+button:hover::after,
+button:focus::after {
+  cursor: pointer;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+button[aria-expanded='true'] {
+  color: var(--blue);
+}
+
+button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+
+button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion-content p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2em 0;
+}
+
+.ContactHeading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-left: 45%;
+}
+
+.section5 {
+  /*background-image: url('pics/Banner3.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Center the background image */
+  /* You can add more background properties and styles as needed */
+  height: 300px; /* Set a height for the section to see the background */
+  position: relative;
+  background-color: #3c3c3c;
+  color:rgb(0, 0, 0);
+}
+.section6 {
+  /*background-image: url('pics/Banner3.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Center the background image */
+  /* You can add more background properties and styles as needed */
+  height: 50px; /* Set a height for the section to see the background */
+  position: relative;
+  background-color: #000000;
+  color:rgb(0, 0, 0);
+}
+
+
+.section4 {
+  background-image: url('pics/Banner4.png'); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Center the background image */
+  /* You can add more background properties and styles as needed */
+  height: 700px; /* Set a height for the section to see the background */
+}
+
+.ProgramSchedule {
+  font-family: cursive, sans-serif; /* Replace 'YourDesiredFont' with the actual font you want to use */ /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  color: Black; /* Adjust the text color as needed */
+  text-align: center; /* Adjust the text alignment as needed */
+  padding: 60px; /* Adjust the padding as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+#box5 {
+  width: 300px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background color */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: 7%;
+  margin-bottom: 1cm;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+}
+.content__container__list__item a {
+  color: white;
+  text-decoration: none; /* Remove the underline */
+}
+
+.icon2{
+  overflow:auto;
+  margin-left: 30px;
+  filter: invert(100%);
+}
+.icon {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
