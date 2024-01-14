@@ -620,7 +620,7 @@ button[aria-expanded='true'] + .accordion-content {
   color: white;
   border-radius: 5px;
   margin-top: 1%;
-  margin-left: 45%;
+  margin-left: 0%;
 }
 
 .section5 {
@@ -639,7 +639,8 @@ button[aria-expanded='true'] + .accordion-content {
   background-size: cover; /* Adjust the background size as needed */
   background-position: center; /* Center the background image */
   /* You can add more background properties and styles as needed */
-  height: auto; /* Set a height for the section to see the background */
+  height: auto; 
+  min-height: 200px;/* Set a height for the section to see the background */
   position: relative;
   background-color: #000000;
   color:rgb(0, 0, 0);
@@ -845,6 +846,7 @@ button[aria-expanded='true'] + .accordion-content {
     display: inline-flex;
     flex-direction: column;
     min-height: 900px;
+    width: 100%;
     height: auto;
   }
 
@@ -852,11 +854,12 @@ button[aria-expanded='true'] + .accordion-content {
     display: inline-flex;
     flex-direction: column;
     min-height: 900px;
+    width: 100%;
     height: auto;
   }
 
   .section6 {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
   }
 
@@ -879,4 +882,75 @@ button[aria-expanded='true'] + .accordion-content {
     width: 92%;
     padding: 4%;
   }
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactBlock {
+  flex: 1 1 30%; /* Adjust the width as needed */
+  margin: 2.5%;
+  padding: 2.5%;
+  width: 90%;
+  height: auto;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.infoBlock, .pitchBlock, .mapBlock {
+  position: relative;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cFormInput {
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.gradButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.gradButton:hover {
+  background-color:#45a049;
+}
+
+.text{
+  color: #000000;
+}
+
+.mapBlock>div{
+  color: #000000;
 }
