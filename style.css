@@ -260,6 +260,7 @@ i {
     flex-direction: column;
     align-items: center;
     margin-left: 0px;
+    max-width: 600px;
   }
   .gradient-text {
     background-clip: text;
@@ -324,7 +325,7 @@ i {
     font-weight: bold; /* Adjust the font weight as needed */
     color: rgb(0, 0, 0); /* Adjust the text color as needed */
     padding:10px;
-    margin-top: 4%;
+    margin-top: 0%;
     border-radius: 5px; /* Adjust the border radius as needed */
   }
 
@@ -333,6 +334,7 @@ i {
     flex: 1;
     background-color:rgb(237,237,237);
     width:100%;
+    max-width: 500px;
     height:300px;
     overflow:hidden;
     padding:1px;
@@ -369,6 +371,7 @@ i {
   .top {
     display: flex;
     width: 100%;
+    justify-content: space-evenly;
   }
 
   .container, .holder {
@@ -408,17 +411,20 @@ i {
   }
   .aboutUs{
     flex:1;
+    justify-content: space-evenly;
   }
   .container3{
     flex: 1;
+    max-width: 600px;
   }
 
 .section2 img {
-  width: 100%; /* Make the image fill the entire width of the section */
+  width: 100%;
+  max-width: 521.15px; /* Make the image fill the entire width of the section */
   height: 300px; /* Maintain the aspect ratio of the image */
   display: block; /* Remove extra spacing below the image */
   margin-left: 0%;
-  margin-top: 10%;
+  margin-top: 10px;
   border-radius: 20px;
 
 }
