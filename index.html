@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/main2.css">
-    <link rel="stylesheet" href="styles/main3.css">
+    <!-- <link rel="stylesheet" href="styles/main2.css">
+    <link rel="stylesheet" href="styles/main3.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -11,7 +11,24 @@
         
 </head>
 <body>
-  <div class="container" id="header">
+
+  <div class="container--1 w-full h-fit p-5">
+    <div class="head flex flex-row justify-between w-full h-fit">
+      <div class="left flex flex-row gap-8 w-fit h-fit justify-center items-center">
+        <div class="image-1 w-16 sm:w-20 justify-center items-center lg:w-40 ">
+          <img src="pics\IITT.png" alt="IITT">
+        </div>
+        <div class="image-2 w-40 sm:w-60 md:w-[450px] animate-pulse">
+          <img src="pics\name.png" alt="IITT"  >
+        </div>
+      </div>
+      <div class="right flex h-fit w-fit items-center justify-center">
+        <img src="./assets/logo_google.png"  alt="Google_Research" class="w-96 h-fit" >
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container " id="header">
     <div class="image-container">
       <img src="pics\IITT.png" alt="IITT">
     </div>
@@ -21,9 +38,9 @@
     <div class="image-container1">
       <img src="pics\Google_Research.png"  alt="Google_Research" width="500px">
     </div>
-  </div>
+  </div> -->
 
-    <div id="navbar">
+    <!-- <div id="navbar">
         <nav class="navbar navbar-expand-custom navbar-mainbg">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -47,7 +64,18 @@
                 </ul>
             </div>
         </nav>
+    </div> -->
+
+    <div class="navbar-custom p-4 flex flex-row w-full bg-blue-500 rounded-xl text-white font-bold">
+      <div class="items flex flex-row justify-around flex-wrap w-full gap-3">
+        <div class="dashboard cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md">Dashboard</div>
+        <div class="about-us cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md">About Us</div>
+        <div class="events cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md">Events</div>
+        <div class="schedule cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md">Progarm Schedule</div>
+        <div class="contacts cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md">Contacts</div>
+      </div>
     </div>
+  
 
     <div class="wrapper" >
       <section class="section section1">
@@ -95,7 +123,7 @@
           <div class="AboutUsHeading">
             About Us 
           </div>
-          <img src="pics/IIT.png" alt="About Us Image" class="elevated-image">
+          <img src="pics/IIT.png" alt="About Us Image" class="elevated-image pl-[10px]">
         </div>
         <div class="container3">
           <div id="box3" class="gradient-text">IIT Tirupati<br>
@@ -219,10 +247,11 @@
       <li class="content__container__list__item"><a href="https://wa.me/9398815361?text=You%20are%20Great" target="_blank"><img src="pics/smile1.png" class="icon2" id="icon" >  Pardhiv</li>
     </ul>
   </div>
-</div>
+
       </section>
       
     </div>
+  </div>
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>
