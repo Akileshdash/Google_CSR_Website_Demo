@@ -409,7 +409,7 @@ i {
     position: relative;
     display: flex;
   }
-  .aboutUs{
+  #aboutUs{
     flex:1;
     justify-content: space-evenly;
   }
