@@ -721,6 +721,11 @@ button[aria-expanded='true'] + .accordion-content {
 }
 
 @media screen and (max-width: 600px) {
+  #aboutUs{
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
   .container {
     width: 100%;
     display: flex;
@@ -759,12 +764,15 @@ button[aria-expanded='true'] + .accordion-content {
   }
 
   .top {
-    height: 1000px;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
   .mid {
-    height: 1000px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
