@@ -421,6 +421,7 @@ i {
   }
   #aboutUs{
     flex:1;
+    max-width: 600px;
     justify-content: space-evenly;
   }
   #box3{
