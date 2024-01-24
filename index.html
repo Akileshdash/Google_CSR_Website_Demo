@@ -2,125 +2,119 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/main2.css">
-    <link rel="stylesheet" href="styles/main3.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         
 </head>
 <body>
-  <div class="container" id="header">
-    <div class="image-container">
-      <img src="pics\IITT.png" alt="IITT">
-    </div>
-    <div class="image-container2">
-      <img src="pics\name.png" alt="IITT" width="500px" margin-left="1cm" >
-    </div>
-    <div class="image-container1">
-      <img src="pics\Google_Research.png"  alt="Google_Research" width="500px">
+  
+  <!-------------------Header--------------------->
+
+  <div class="container--1 w-full h-fit p-5" id="header">
+    <div class="head flex flex-row justify-between w-full h-fit">
+      <div class="left flex flex-row gap-8 w-fit h-fit justify-center items-center">
+        <div class="image-1 w-16 sm:w-20 justify-center items-center lg:w-40 ">
+          <img src="pics\IITT.png" alt="IITT">
+        </div>
+        <div class="image-2 w-40 sm:w-60 md:w-[450px] animate-pulse">
+          <img src="pics\name.png" alt="IITT"  >
+        </div>
+      </div>
+      <div class="right flex h-fit w-fit items-center justify-center">
+        <img src="./assets/logo_google.png"  alt="Google_Research" class="w-96 h-fit" >
+      </div>
     </div>
   </div>
 
+  <!----------------Navigation Bar--------------------->  
     <div id="navbar">
-        <nav class="navbar navbar-expand-custom navbar-mainbg">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#header"><i class="fas fa-tachometer-alt"><img src="pics/dashboard.png" class="icon1" id="icon" ></i>Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs"><i class="far fa-clone"><img src="pics/us.png" class="icon1" ></i>About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#events"><i class="far fa-calendar-alt"><img src="pics/event.png" class="icon1" ></i>Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#programSchedule"><i class="far fa-chart-bar"><img src="pics/schedule.png" class="icon1" ></i>Program Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact"><i class="far fa-copy"><img src="pics/contact.png" class="icon1" ></i>Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div class="wrapper" >
-      <section class="section section1">
-      <div class="top">
-      <div class="container1">
-        <div id="box1" class="gradient-text">Google Research<br>
-        </div>
-        <div id="box2">Text Here<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec euismod metus sem, eget dictum odio pulvinar at. 
-          Donec ornare nisl ex, sed dictum turpis commodo sit amet. 
-          Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-          Praesent enim nulla, tempus at erat nec, mattis faucibus mi. 
-          Sed a pulvinar quam, aliquam eleifend augue. 
-          In eget justo et sem venenatis luctus ac vitae erat. 
-          Suspendisse bibendum vitae mauris id molestie. 
-          Maecenas lobortis commodo magna et imperdiet. 
-          Aliquam ut sollicitudin nisi. Nam eget vestibulum quam. 
-          Quisque tempor velit risus, eu consectetur erat scelerisque ut. 
-          Donec vulputate tellus quis magna .
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+      <div class="navbar-custom p-4 flex flex-row w-full bg-blue-500 rounded-xl text-white font-bold">
+        <div class="items flex flex-row justify-around flex-wrap w-full gap-3">
+          <div class="dashboard cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md"><a class="nav-link" href="#header" style="color: white;" >Dashboard</a></div>
+          <div class="about-us cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md "><a class="nav-link" href="#about" style="color: white;">About Us</a></div>
+          <div class="events cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md"><a class="nav-link" href="#events" style="color: white;">Events</a></div>
+          <div class="schedule cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md"><a class="nav-link" href="#programSchedule" style="color: white;">Progarm Schedule</a></div>
+          <div class="contacts cursor-pointer hover:scale-110 duration-200 hover:text-yellow-400 active:scale-90 border-[1px] active:border-dashed active:border-red-500 border-transparent p-2 rounded-md"><a class="nav-link" href="#contact" style="color: white;">Contacts</a></div>
         </div>
       </div>
-
-      <div class="holder">
-        <div class="CurrentEvents">Current Events</div>
-        <ul id="ticker01">
-                    <li><span>10/10/2007 :</span><a href="#"> The first thing that most Javascript programmers</a></li>
-                    <li><span>10/10/2007 :</span><a href="#"> End up doing is adding some code</a></li>
-                    <li><span>10/10/2007 :</span><a href="#"> The code that you want to run</a></li>
-                    <li><span>08/10/2007 :</span><a href="#"> Inside of which is the code that you want to run</a></li>
-                    <li><span>08/10/2007 :</span><a href="#"> Right when the page is loaded</a></li>
-                    <li><span>05/10/2007 :</span><a href="#"> Problematically, however, the Javascript code</a></li>
-                    <li><span>04/10/2007 :</span><a href="#"> The first thing that most Javascript programmers</a></li>
-                    <li><span>04/10/2007 :</span><a href="#"> End up doing is adding some code</a></li>
-                    <li><span>04/10/2007 :</span><a href="#"> The code that you want to run</a></li>
-                    <li><span>03/10/2007 :</span><a href="#"> Inside of which is the code that you want to run</a></li>
-                    <li><span>03/10/2007 :</span><a href="#"> Right when the page is loaded</a></li>
-                    <li><span>01/10/2007 :</span><a href="#"> Problematically, however, the Javascript code</a></li>
-              </ul>
-      
-            </div>
     </div>
-      </section>
-      <section class="section section2" >
-        <div id="aboutUs">
-          <div class="AboutUsHeading">
-            About Us 
-          </div>
-          <img src="pics/IIT.png" alt="About Us Image" class="elevated-image">
-        </div>
-        <div class="container3">
-          <div id="box3" class="gradient-text">IIT Tirupati<br>
-          </div>
-          <div id="box4">Text Here<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec euismod metus sem, eget dictum odio pulvinar at. 
-            Donec ornare nisl ex, sed dictum turpis commodo sit amet. 
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-            Praesent enim nulla, tempus at erat nec, mattis faucibus mi. 
-            Sed a pulvinar quam, aliquam eleifend augue. 
-            In eget justo et sem venenatis luctus ac vitae erat. 
-            Suspendisse bibendum vitae mauris id molestie. 
-            Maecenas lobortis commodo magna et imperdiet. 
-            Aliquam ut sollicitudin nisi. Nam eget vestibulum quam. 
-            Quisque tempor velit risus, eu consectetur erat scelerisque ut. 
-            Donec vulputate tellus quis magna .
-          </div>
-        </div>
-      </section>
   
-      <section class="section section3" id="events">
-        <div class="EventsHeading">
+<!----------------Wrapper for Whole Body--------------------->
+    <div class="wrapper" >
+<!--------- Section 1 Google Research and Current Events ---------->
+      <section class="section section1">
+        <div class="top">
+          <div class="container1">
+            <div id="box1" class="gradient-text">Google Research<br></div>
+            <div id="box2">Text Here<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec euismod metus sem, eget dictum odio pulvinar at. 
+              Donec ornare nisl ex, sed dictum turpis commodo sit amet. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+              Praesent enim nulla, tempus at erat nec, mattis faucibus mi. 
+              Sed a pulvinar quam, aliquam eleifend augue. 
+              In eget justo et sem venenatis luctus ac vitae erat. 
+              Suspendisse bibendum vitae mauris id molestie. 
+              Maecenas lobortis commodo magna et imperdiet. 
+              Aliquam ut sollicitudin nisi. Nam eget vestibulum quam. 
+              Quisque tempor velit risus, eu consectetur erat scelerisque ut. 
+              Donec vulputate tellus quis magna .
+            </div>
+          </div>
+
+          <div class="holder">
+            <div class="CurrentEvents">Current Events</div>
+            <ul id="ticker01">
+              <li><span>10/10/2007 :</span><a href="#"> The first thing that most Javascript programmers</a></li>
+              <li><span>10/10/2007 :</span><a href="#"> End up doing is adding some code</a></li>
+              <li><span>10/10/2007 :</span><a href="#"> The code that you want to run</a></li>
+              <li><span>08/10/2007 :</span><a href="#"> Inside of which is the code that you want to run</a></li>
+              <li><span>08/10/2007 :</span><a href="#"> Right when the page is loaded</a></li>
+              <li><span>05/10/2007 :</span><a href="#"> Problematically, however, the Javascript code</a></li>
+              <li><span>04/10/2007 :</span><a href="#"> The first thing that most Javascript programmers</a></li>
+              <li><span>04/10/2007 :</span><a href="#"> End up doing is adding some code</a></li>
+              <li><span>04/10/2007 :</span><a href="#"> The code that you want to run</a></li>
+              <li><span>03/10/2007 :</span><a href="#"> Inside of which is the code that you want to run</a></li>
+              <li><span>03/10/2007 :</span><a href="#"> Right when the page is loaded</a></li>
+              <li><span>01/10/2007 :</span><a href="#"> Problematically, however, the Javascript code</a></li>
+            </ul>
+          </div>
         </div>
+      </section>
+
+<!--------- Section 2 About Us ---------->
+      <section class="section section2" id="about" >
+        <div class="mid">
+          <div id="aboutUs">
+            <div class="AboutUsHeading"> 
+              About Us 
+            </div>
+            <img src="pics/IIT.png" alt="About Us Image" class="elevated-image pl-[10px]">
+          </div>
+          <div class="container3">
+            <div id="box3" class="gradient-text">IIT Tirupati<br></div>
+            <div id="box4">IIT Tirupati<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec euismod metus sem, eget dictum odio pulvinar at. 
+              Donec ornare nisl ex, sed dictum turpis commodo sit amet. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+              Praesent enim nulla, tempus at erat nec, mattis faucibus mi. 
+              Sed a pulvinar quam, aliquam eleifend augue. 
+              In eget justo et sem venenatis luctus ac vitae erat. 
+              Suspendisse bibendum vitae mauris id molestie. 
+              Maecenas lobortis commodo magna et imperdiet. 
+              Aliquam ut sollicitudin nisi. Nam eget vestibulum quam. 
+              Quisque tempor velit risus, eu consectetur erat scelerisque ut. 
+              Donec vulputate tellus quis magna .
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--------- Section 3 Event Information ---------->
+      <section class="section section3" id="events">
         <div class="container2">
-          <h2>Event Information</h2><br>
+          <h1 style="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 30px;">Event Information</h1><br>
           <div class="accordion">
             <div class="accordion-item">
               <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Event 1 - Description of Event</span><span class="icon" aria-hidden="true"></span></button>
@@ -156,6 +150,7 @@
         </div>
       </section>
   
+<!--------- Section 4 Program Schedule ---------->
       <section class="section section4" id="programSchedule">
         <div class="ProgramSchedule">
           <div id="box5">
@@ -164,9 +159,12 @@
         </div>
       </section>
   
-      <section class="section section5" id="contact">
+<!--------- Section 5 Contact Us ---------->
+      <div class="section section5" id="contact">
         <div class="ContactHeading">
-          Contact Us<br>
+          <div class="ContactUs">
+            Contact Us<br>
+          </div>
           <div class="contact-container">
             <div class="contactBlock infoBlock">
               <div class="infoWrap">
@@ -186,84 +184,25 @@
                   <input type="text" class="contactNameInpt" placeholder="Your Name">
                   <input type="text" class="contactMailInpt" placeholder="Your Email">
                   <input type="text" class="contactProjectInpt" placeholder="Project Description">
-                  <p>Hello,</p>
-                  <p>My name is <div class="cFormInput" contenteditable="true" data-target="contactNameInpt"></div> and my email address is <div class="cFormInput" contenteditable="true" data-target="contactMailInpt"></div>. I would like to discuss <div class="cFormInput" contenteditable="true" data-target="contactProjectInpt"></div>.</p>
-                </div>
+                  </div>
+                  <br>
                 <button type="submit" class="gradButton">Send</button>
               </form>
             </div>
           
             <div class="contactBlock mapBlock">
               <!-- <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"> -->
-                <div>Map Content (Lorem Ipsum)</div>
-                <div>More Map Content (Lorem Ipsum)</div>
-                <div>Even More Map Content (Lorem Ipsum)</div>
-              </div>
+              <div>Map Content (Lorem Ipsum)</div>
+              <div>More Map Content (Lorem Ipsum)</div>
+              <div>Even More Map Content (Lorem Ipsum)</div>
             </div>
           </div>
-          
-          
         </div>
-      </section>
-      <section class="section section6" id="contactend">
-<div class="content">
-  <div class="content__container">
-    <p class="content__container__text">
-      Credit : 
-    </p>
-    
-    <ul class="content__container__list">
-      <li class="content__container__list__item"><a href="https://wa.me/9398815361?text=You%20are%20Great" target="_blank"><img src="pics/smile1.png" class="icon2" id="icon" >  Sonith</li>
-      <li class="content__container__list__item"><a href="https://wa.me/9398815361?text=You%20are%20Great" target="_blank"><img src="pics/smile2.png" class="icon2" id="icon" > Akilesh</a></li>
-      <li class="content__container__list__item"><a href="https://wa.me/9398815361?text=You%20are%20Great" target="_blank"><img src="pics/smile1.png" class="icon2" id="icon" >  Arpit</li>
-      <li class="content__container__list__item"><a href="https://wa.me/9398815361?text=You%20are%20Great" target="_blank"><img src="pics/smile1.png" class="icon2" id="icon" >  Pardhiv</li>
-    </ul>
-  </div>
-</div>
-      </section>
-      
+      </div>    
     </div>
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>
-    
-  <!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+
 </body>
 </html>
